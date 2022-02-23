@@ -1,0 +1,32 @@
+@page
+@model InvestModel
+@{
+    ViewData["Title"] = "Invest";
+}
+<h1 class="display-3" style="color: #222233; margin-left: 20px">@ViewData["Title"]</h1>
+<br></br>
+
+
+<div class="flex-container">
+    <div class="flex-child">
+        <h1 style="color: #222233">Legal Constitutions</h1>
+        <p style="color: #222233">Gardella Industries is a Private Corporation ("S-Corp"). This legally permits the company to have up to 100 individual investors owning shares in the company. Private Corporations do have more stringent restrictions in regards to stakeholder eligibilty, specifically with Nationality/Citizenship(s).</p>
+        <br></br>
+
+        <h1 style="color: #222233">Become a Shareholder</h1>
+        <p style="color: #222233">Consultation appointments with Gardella Industries' board of executives are available to potential new investors that are selected during the pre-screening process.</p>
+        <br></br>
+    </div>
+
+    <div class="flex-child">
+        <iframe width="450"
+                height="450"
+                style="border:0"
+                loading="eager"
+                allowfullscreen
+                src="https://api.polygon.io/v3/reference/tickers?active=true&sort=ticker&order=asc&limit=20&apiKey=*">
+        </iframe>
+
+    </div>
+
+</div>
